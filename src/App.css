@@ -1,0 +1,305 @@
+.bgggg {
+  background-image: url(./assets/img/slider/slider-5.jpg)
+}
+
+.logo-t {
+  color: #FFFF;
+  font-weight: 700;
+}
+.logo-t2 {
+  color: rgb(16, 15, 15);
+  font-weight: 700;
+}
+
+.ser-bg {
+  background-image: url(./assets/img/bg/12.jpg)
+}
+
+
+
+.learn-bg {
+  background-image: url(./assets/img/bg/11.jpg)
+}
+
+.footer-bg {
+  background-image: url(./assets/img/bg/bg-7.jpg)
+}
+
+
+.about-bread-bg {
+
+  background-image: url(./assets/img/bg/bg-14.jpg)
+}
+
+.assect-bg {
+  background-image: url(assets/img/bg/bg-15.jpg)
+}
+
+
+.cta-bg{
+  background-image:url(./assets/img/bg/bg-2.jpg)
+}
+
+.ser-bread{
+  background-image:url(./assets/img/bg/bg-14.jpg)
+}
+
+
+.blg-bread{
+  background-image:url(./assets/img/bg/bg-14.jpg)
+}
+
+
+.contact-bread{
+  background-image:url(./assets/img/bg/bg-14.jpg)
+}
+
+.data-bg{
+  background: url(./assets/img/bg/contact-bg.png);
+}
+
+
+.pri-bg{
+  background-image:url(assets/img/bg/bg-14.jpg)
+}
+
+
+.nav-link:hover{
+    color: rgb(21, 104, 173) !important;
+    border-bottom:   2px solid rgb(21, 104, 173) !important;
+}
+
+
+
+.login-bg{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+.log{
+  background: #ffff;
+  border-radius: 5px;
+  padding: 50px;
+}
+
+
+.reg-t{
+  color: #096bd8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar-toggler-icon {
+  background: #ffff none repeat scroll 0 0;
+  display: block;
+  height: 3px;
+  margin-top: 3px;
+}
+
+.navbar-toggler {
+  color: #FFFF !important;
+  border: 2px solid #ffff !important;
+  padding-bottom: 10px !important;
+  padding-top: 6px !important;
+}
+
+
+.navbar-toggler-icon2 {
+  background: #050505 none repeat scroll 0 0;
+  display: block;
+  height: 3px;
+  margin-top: 3px;
+}
+
+.navbar-toggler2 {
+  color: #0a0a0a !important;
+  border: 2px solid #080808 !important;
+  padding-bottom: 10px !important;
+  padding-top: 6px !important;
+}
+
+
+.hlu-bg {
+  background: #ffff;
+  padding: 10px 20px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+
+
+.error-message{
+  color: #ffff !important;
+}
+
+.price{
+  text-align: center !important;
+}
+.price2{
+  text-align: end !important;
+}
+
+.form-select{
+  background: #f4f4f4;
+  /* background: none !important; */
+  height: 70px !important;
+  width: 100% !important;
+  padding: 0 30px !important;
+  padding-right: 30px !important;
+  border: 0 !important;
+  color: #9d9d9d !important;
+  font-weight: 400 !important;
+  border: 1px solid #ebebeb !important;
+  font-size: 15px !important;
+  text-transform: capitalize !important;
+  border-radius: 5px !important;
+}
+
+.item-nname{
+  margin-left: 20px !important;
+}
+
+
+.bor{
+  border-top: 2px solid black !important;
+}
+
+.co-info-box{
+  border: 1px solid black;
+  padding: 0px 20px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.co-info-box h5{
+  margin-top: -15px !important;
+}
+
+
+
+.cou-curry-box{
+  margin-top: 50px;
+  background: #faf9fd;
+  border-radius: 25px;
+  padding: 40px;
+}
+
+.mar-btn{
+  margin-left: 60px;
+}
+
+.price-mar{
+  margin-top: 35px;
+}
+
+
+.cur-info-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cur-icon{
+  margin-top: 7px;
+  margin-right: 10px;
+}
+
+.cur-info p{
+  font-size: 17px;
+  font-weight: 500;
+}
+
+
+.successPay{
+  box-shadow: 0px 0px 20px 1px rgb(216, 216, 216);
+  height: 500px;
+  border-radius: 5px;
+}
+
+
+.con-img{
+  height: 230px;
+}
+
+.pay-s-text{
+  text-align: center;
+}
+
+.review-from{
+  margin-left: 50px !important;
+}
+
+.ret-com{
+  padding: 10px;
+}
+
+.rrrrr{
+  margin-top: 20px !important;
+  border: 1px solid red;
+}
+
+.fos{
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 575.98px) {
+  .co-info-box{
+    
+    margin-left: 10px;
+  }
+
+  .review-from{
+    margin-left: 0px !important;
+    padding: 20px;
+  }
+
+  .llrr{
+    width: 150px;
+  }
+
+  .price{
+    text-align: start !important;
+    margin-top: 50px;
+  }
+  .price2{
+    text-align: start !important;
+    margin-top: 50px;
+  }
+  .alcenter{
+    text-align: start !important;
+  }
+  
+
+}
+
+
+
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+
+.all-res-logo h2{
+  font-size: 30px !important;
+}
+
+}
