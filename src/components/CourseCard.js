@@ -8,7 +8,7 @@ const CourseCard = (props) => {
     <div className="blog-wrapper blog-2-wrapper">
       <div className="blog-img">
         <a href="blog-details.html">
-          <img src={images} alt="" />
+          <img src={images} alt="Course Image" />
         </a>
       </div>
       <div className="mt-3 d-flex justify-content-between">
