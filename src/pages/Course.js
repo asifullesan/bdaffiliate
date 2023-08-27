@@ -64,7 +64,7 @@ const Course = () => {
                       title={item?.title}
                       description={item?.description}
                       prise={item?.price}
-                      totalrating={item.totalrating}
+                      totalrating={item?.totalrating}
                       images={item?.images[0]?.url}
                     //   date={moment((item?.createdAt)).format('MMMM Do YYYY, h:mm a')}
                    />
