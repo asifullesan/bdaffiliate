@@ -255,7 +255,16 @@
 }
 
 
-
+.logout-btn{
+  background: #096bd8;
+  border: medium none;
+  padding: 10px 30px;
+  text-align: center;
+  font-family: "cerebri_sansbold";
+  color: #FFFF;
+  margin-top: 20px;
+  border-radius: 5px;
+}
 
 
 

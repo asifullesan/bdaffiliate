@@ -30,6 +30,8 @@ import moment from "moment";
 const Home = () => {
   const blogState = useSelector((state) => state?.blog?.blogs);
   const navigate = useNavigate();
+  const authState = useSelector((state) => state?.auth)
+  console.log(authState);
 
   const dispatch = useDispatch();
   let location = useLocation();
@@ -49,7 +51,7 @@ const Home = () => {
             <div className="row">
               <div className="col-xl-3 col-lg-3 d-flex align-items-center">
                 <div className="logo">
-                  <Link to="/" >
+                  <Link to="/">
                     <h2 className="logo-t mob-n">BDaffiliate-IT</h2>
                   </Link>
                 </div>
@@ -74,7 +76,7 @@ const Home = () => {
                       <span>01911-788323</span>
                     </div>
                   </div>
-                  <div className="header-top-cta-text f-left">
+                  <div className="header-top-cta-text f-left d-flex">
                     <div className="header-top-icon">
                       <i className="far fa-clock"></i>
                     </div>
@@ -82,6 +84,7 @@ const Home = () => {
                       <p>Sunday - Monday</p>
                       <span>10:00 am - 06:00 pm</span>
                     </div>
+                   
                   </div>
                 </div>
               </div>
@@ -97,7 +100,7 @@ const Home = () => {
             <div className="row">
               <div className="col-xl-9 col-lg-9">
                 <div className="main-menu">
-                  <nav id="mobile-menu">
+                  <nav id="mobile-menu" className="d-flex justify-content-between">
                     <ul>
                       <li className="active">
                         <Link to="/">home</Link>
@@ -106,37 +109,40 @@ const Home = () => {
                         <Link to="/about">About</Link>
                       </li>
                       <li>
-                        <Link to="service" >
-                          Services
-                        </Link>
+                        <Link to="service">Services</Link>
                       </li>
                       <li className="nav-item">
-                        <Link to="/pricing" className="nav-link bold" >
+                        <Link to="/pricing" className="nav-link bold">
                           Pricing
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link to="/courses" className="nav-link bold" >
+                        <Link to="/courses" className="nav-link bold">
                           Courses
                         </Link>
                       </li>
                       <li>
-                        <Link to="blog" >
-                          blog
-                        </Link>
+                        <Link to="blog">blog</Link>
                       </li>
                       <li>
-                        <Link to="contact-us" >
-                          contact
-                        </Link>
+                        <Link to="contact-us">contact</Link>
                       </li>
                     </ul>
+
+                    {
+                      authState?.user ===null ? <></> : <div>
+                      <button className="logout-btn">LOG OUT</button>
+                    </div> 
+                    }
+                    
                   </nav>
                 </div>
               </div>
               <div className="col-xl-3 col-lg-3 d-none d-lg-block">
                 <div className="header-right f-right ">
+                  
                   <div className="header-3-icon f-right">
+                
                     <a href="https://www.facebook.com/bdaffiliateit?mibextid=LQQJ4d">
                       <i className="fab fa-facebook-f"></i>
                     </a>
@@ -210,13 +216,13 @@ const Home = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                <Link to="blog" className="nav-link bold" >
+                  <Link to="blog" className="nav-link bold">
                     Blog
                   </Link>
                 </li>
                 <li className="nav-item">
-                <Link to="contact-us" className="nav-link bold" href="#">
-                contact
+                  <Link to="contact-us" className="nav-link bold" href="#">
+                    contact
                   </Link>
                 </li>
               </ul>
