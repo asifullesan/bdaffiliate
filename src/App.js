@@ -28,6 +28,9 @@ import SingleCourse from "./pages/SingleCourse";
 import PaymentSuccess from "./pages/PaymentSuccess";
 import EmailVerify from "./pages/EmailVerify";
 import PaymentFailed from "./pages/PaymentFailed";
+import { PrivetRoute } from "./routing/PrivetRoute";
+import { OpenRoute } from "./routing/OpenRoute";
+
 
 function App() {
   return (
@@ -43,11 +46,11 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/blog/:id" element={<SingleBlog />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<SignUp />} />
+          <Route path="/register" element={<OpenRoute><SignUp /></OpenRoute>} />
           <Route path="/pricing" element={<Pricing />} />
-          <Route path="/cart" element={<Cart />} />
+          <Route path="/cart" element={<PrivetRoute><Cart /></PrivetRoute>} />
           <Route path="/checkout" element={<CheckOut />} />
-          <Route path="/courses" element={<Course />} />
+          <Route path="/courses" element={<Course /> } />
           <Route path="/course/:id" element={<SingleCourse />} />
           <Route path="/payment/success/:tranId" element={<PaymentSuccess />} />
           <Route path="/payment/failed" element={<PaymentFailed />} />

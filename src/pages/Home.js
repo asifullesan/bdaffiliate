@@ -130,7 +130,7 @@ const Home = () => {
                     </ul>
 
                     {
-                      authState?.user ===null ? <></> : <div>
+                       authState?.user ===null ?  <></> : <div>
                       <button className="logout-btn">LOG OUT</button>
                     </div> 
                     }

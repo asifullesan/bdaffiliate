@@ -37,6 +37,7 @@ const Login = () => {
     validationSchema: loginSchema,
     onSubmit: (values) => {
       dispatch(loginUser(values));
+      navigate("/");
       
     },
   });
@@ -46,13 +47,13 @@ const Login = () => {
 
   const { user, isError, isSuccess, isLoading, message } = authState.auth;
 
-  useEffect(() => {
-    if (isLoading === true) {
-      navigate("/");
-    } else {
-      navigate(" ");
-    }
-  }, [user, isError, isSuccess, isLoading]);
+  // useEffect(() => {
+  //   if (isLoading === true) {
+  //     navigate("/");
+  //   } else {
+  //     navigate(" ");
+  //   }
+  // }, [user, isError, isSuccess, isLoading]);
 
 
 
