@@ -48,7 +48,7 @@ const Login = () => {
 
   useEffect(() => {
     if (isLoading === true) {
-      navigate("https://www.bdaffiliateit.com/");
+      navigate("/");
     } else {
       navigate(" ");
     }
