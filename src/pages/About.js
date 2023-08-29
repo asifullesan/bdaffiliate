@@ -2,10 +2,18 @@ import { Link } from "react-router-dom";
 import ab from "../assets/img/about/02.png";
 import ass from "../assets/img/bg/c.jpg";
 import sp1 from "../assets/img/shape/shape-1.png";
-import team1 from "../assets/img/team/team-01.jpg";
-import team2 from "../assets/img/team/team-01.jpg";
-import team3 from "../assets/img/team/team-01.jpg";
-import team4 from "../assets/img/team/team-01.jpg";
+import ceo from "../assets/img/about/ceo.jpg";
+import lesan from "../assets/img/about/lesan.jpg";
+import debasis from "../assets/img/about/Debashish Shankhari.jpg";
+import sawon from "../assets/img/about/shawon.jpg";
+import novel from "../assets/img/about/novel.jpg";
+import asad from "../assets/img/about/asad.JPG";
+import debu from "../assets/img/about/debu.jpg";
+import rinku from "../assets/img/about/rinku.jpg";
+import parvez from "../assets/img/about/parvez.jpg";
+import roni from "../assets/img/about/roni.JPG";
+import mejba from "../assets/img/about/mejba.jpg";
+
 import test1 from "../assets/img/testimonial/01.png";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -364,11 +372,86 @@ const About = () => {
               <div className="col-xl-3 col-lg-3 col-md-6 mb-30">
                 <div className="team-wrapper">
                   <div className="team-img">
-                    <img src={team1} alt="" />
+                    <img src={ceo} alt="" />
                   </div>
                   <div className="team-text">
-                    <h4>Solvina D Naliz</h4>
-                    <span>Web developer</span>
+                    <h4>MD Imam Hasan</h4>
+                    <span>Founder & CEO</span>
+                    <div className="team-icon">
+                      <a href="https://www.facebook.com/imamhasanfb2k12">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                      <a href="https://twitter.com/Imamhasan095">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      <a href="https://www.facebook.com/imamhasanfb2k12">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/md-hasan-492bb9216/">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-3 col-lg-3 col-md-6 mb-30">
+                <div className="team-wrapper">
+                  <div className="team-img">
+                    <img src={asad} alt="" />
+                  </div>
+                  <div className="team-text">
+                    <h4>Asadul Islam</h4>
+                    <span>Office Manager</span>
+                    <div className="team-icon">
+                      <a href="https://www.facebook.com/Asad.Rafi34">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                      <a href="#">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      <a href="#">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                      <a href="#">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-3 col-lg-3 col-md-6 mb-30">
+                <div className="team-wrapper">
+                  <div className="team-img">
+                    <img src={debasis} alt="" />
+                  </div>
+                  <div className="team-text">
+                    <h4 className="deba">Debashish Shankhari</h4>
+                    <span>IT Analyst</span>
+                    <div className="team-icon">
+                      <a href="https://www.facebook.com/debashish.shankhari.3?mibextid=ZbWKwL">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                      <a href="#">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      <a href="#">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                      <a href="#">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-3 col-lg-3 col-md-6 mb-30">
+                <div className="team-wrapper">
+                  <div className="team-img">
+                    <img src={sawon} alt="" />
+                  </div>
+                  <div className="team-text">
+                    <h4 className="deba">MD Shohanoor Rahman</h4>
+                    <span>Marketing Executive </span>
                     <div className="team-icon">
                       <a href="#">
                         <i class="fab fa-facebook-f"></i>
@@ -389,13 +472,13 @@ const About = () => {
               <div className="col-xl-3 col-lg-3 col-md-6 mb-30">
                 <div className="team-wrapper">
                   <div className="team-img">
-                    <img src={team2} alt="" />
+                    <img src={debu} alt="" />
                   </div>
                   <div className="team-text">
-                    <h4>Jerry D.Silva</h4>
-                    <span>UI Designer</span>
+                    <h4>Debbrata Das</h4>
+                    <span>Account Manager</span>
                     <div className="team-icon">
-                      <a href="#">
+                      <a href="https://www.facebook.com/debbrata.20">
                         <i class="fab fa-facebook-f"></i>
                       </a>
                       <a href="#">
@@ -414,13 +497,39 @@ const About = () => {
               <div className="col-xl-3 col-lg-3 col-md-6 mb-30">
                 <div className="team-wrapper">
                   <div className="team-img">
-                    <img src={team3} alt="" />
+                    <img src={lesan} alt="" />
                   </div>
                   <div className="team-text">
-                    <h4>David Walillams</h4>
-                    <span>sr consultant</span>
+                    <h4>Asiful Islam</h4>
+                    <span>Web Developer (MERN)</span>
                     <div className="team-icon">
+                      <a href="https://www.facebook.com/asiful.islam.583671">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
                       <a href="#">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      <a href="#">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                      <a href="#">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="col-xl-3 col-lg-3 col-md-6 mb-30">
+                <div className="team-wrapper">
+                  <div className="team-img">
+                    <img src={novel} alt="" />
+                  </div>
+                  <div className="team-text">
+                    <h4>Novel Sikder</h4>
+                    <span>Technical Support Specialist</span>
+                    <div className="team-icon">
+                      <a href="https://www.facebook.com/novelsikder1">
                         <i class="fab fa-facebook-f"></i>
                       </a>
                       <a href="#">
@@ -439,13 +548,88 @@ const About = () => {
               <div className="col-xl-3 col-lg-3 col-md-6 mb-30">
                 <div className="team-wrapper">
                   <div className="team-img">
-                    <img src={team4} alt="" />
+                    <img src={rinku} alt="" />
                   </div>
                   <div className="team-text">
-                    <h4>Michel Z. Jones</h4>
-                    <span>CEO & Founder</span>
+                    <h4>Asaduzzaman Rinku</h4>
+                    <span>Support Assistant</span>
                     <div className="team-icon">
+                      <a href="https://www.facebook.com/Asaduzzaman.rinku.58">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
                       <a href="#">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      <a href="#">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                      <a href="#">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-3 col-lg-3 col-md-6 mb-30">
+                <div className="team-wrapper">
+                  <div className="team-img">
+                    <img src={parvez} alt="" />
+                  </div>
+                  <div className="team-text">
+                    <h4>Md Pervez Hossain</h4>
+                    <span>Office Consultant </span>
+                    <div className="team-icon">
+                      <a href="https://www.facebook.com/md.pervez.315?mibextid=ZbWKwL">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                      <a href="#">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      <a href="#">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                      <a href="#">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-3 col-lg-3 col-md-6 mb-30">
+                <div className="team-wrapper">
+                  <div className="team-img">
+                    <img src={roni} alt="" />
+                  </div>
+                  <div className="team-text">
+                    <h4>Musfikur Rahman Roni</h4>
+                    <span>Office Consultant </span>
+                    <div className="team-icon">
+                      <a href="https://www.facebook.com/musfiqurrohman.roni">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                      <a href="#">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      <a href="#">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                      <a href="#">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-3 col-lg-3 col-md-6 mb-30">
+                <div className="team-wrapper">
+                  <div className="team-img">
+                    <img src={mejba} alt="" />
+                  </div>
+                  <div className="team-text">
+                    <h4>MD Mesbah uddin</h4>
+                    <span>Office Consultant </span>
+                    <div className="team-icon">
+                      <a href="https://www.facebook.com/eng.mesbauddin?mibextid=2JQ9oc">
                         <i class="fab fa-facebook-f"></i>
                       </a>
                       <a href="#">
