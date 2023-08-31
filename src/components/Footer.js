@@ -136,9 +136,7 @@ const Footer = () => {
                       </div>
                       <div className="contact-address-text">
                         <h4>
-                          bdaffiliateikhulna
-                          <br />
-                          zone@gmail.com
+                        bdaffiliateit<br/>helpzone@gmail.com
                         </h4>
                       </div>
                     </li>
