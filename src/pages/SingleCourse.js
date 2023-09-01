@@ -41,7 +41,7 @@ const SingleCourse = () => {
           // details: courseState?.,.
         })
       );
-      navigate("/cart");
+      navigate("/checkout");
     } catch (error) {}
   }
 
@@ -49,7 +49,7 @@ const SingleCourse = () => {
 
   const [star, setStar] = useState(null)
   const [comment, setComment] = useState(null)
-  console.log(comment);
+  
 
   const addRatingToCourse = () => {
     if(star === null) {

@@ -37,6 +37,9 @@ export const loginUser = createAsyncThunk(
   }
 );
 
+
+
+
 export const getUserProductWishlist = createAsyncThunk(
   "user/wishlist",
   async (thunkAPI) => {
@@ -283,7 +286,7 @@ export const authSlice = createSlice({
         state.isSuccess = false;
         state.message = action.error;
         state.isLoading = false;
-      });
+      })
   },
 });
 

@@ -95,22 +95,22 @@ const Footer = () => {
                   <h4 className="footer-title">Quick Links</h4>
                   <ul className="fotter-menu">
                     <li>
-                      <a href="#">About Us</a>
+                      <Link to="/about">About Us</Link>
                     </li>
                     <li>
-                      <a href="#">Need a Consultant?</a>
+                      <Link to="/gallery">Our Gallery</Link>
                     </li>
                     <li>
-                      <a href="#">Our Services</a>
+                      <Link to="/service">Our Services</Link>
                     </li>
                     <li>
                       <a href="#">Have Any Questions?</a>
                     </li>
                     <li>
-                      <a href="#">Meet Our Team</a>
+                      <Link to="/about">Meet Our Team</Link>
                     </li>
                     <li>
-                      <a href="#">Contact Us</a>
+                      <Link to="/contact-us">Contact Us</Link>
                     </li>
                   </ul>
                 </div>

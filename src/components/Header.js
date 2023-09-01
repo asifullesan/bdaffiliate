@@ -6,23 +6,35 @@ import wishlist from "../images/wishlist.svg";
 import user from "../images/user.svg";
 import cart from "../images/cart.svg";
 import menu from "../images/menu.svg";
+import { useSelector } from "react-redux";
 const Header = () => {
+
+
+  const authState = useSelector((state) => state?.auth)
+
+
   return (
     <>
-       <header>
+      <header>
         <div className="header-top-area grey-bg d-none d-md-block">
           <div className="container">
             <div className="row">
               <div className="col-xl-8 col-lg-8 col-md-6 d-flex align-items-center">
                 <div className="header-info">
                   <span>
-                    <i className="far fa-map-marker-alt"> 151/1, Mujgunni R/A</i> 
+                    <i className="far fa-map-marker-alt">
+                      {" "}
+                      151/1, Mujgunni R/A
+                    </i>
                   </span>
                   <span className="header-ph">
-                    <i className="far fa-phone"> 01911-788323</i> 
+                    <i className="far fa-phone"> 01911-788323</i>
                   </span>
                   <span className="header-en">
-                    <i className="far fa-envelope-open">  bdaffiliateikhulnazone@gmail.com</i> 
+                    <i className="far fa-envelope-open">
+                      {" "}
+                      bdaffiliateikhulnazone@gmail.com
+                    </i>
                   </span>
                 </div>
               </div>
@@ -60,36 +72,34 @@ const Header = () => {
               </div>
               <div className="col-xl-9 col-lg-9">
                 <div className="header-button f-right d-none d-lg-block">
-                  <Link to="/login" className="btn" href="#">
-                    <span className="btn-text">
-                      Join With Us <i className="far fa-long-arrow-right"></i>
-                    </span>{" "}
-                  </Link>
+                 
+                    <Link to="/login" className="btn" href="#">
+                      <span className="btn-text">
+                        Join With Us <i className="far fa-long-arrow-right"></i>
+                      </span>{" "}
+                    </Link>
+                 
                 </div>
                 <div className="main-menu text-right">
                   <nav id="mobile-menu">
-                  <ul>
+                    <ul>
                       <li>
-                        <Link to="/" >home</Link>
+                        <Link to="/">home</Link>
                       </li>
-                      <li  >
+                      <li>
                         <Link to="/about">About</Link>
                       </li>
                       <li>
                         <Link to="/service">Services</Link>
-                        
                       </li>
                       <li>
                         <Link to="/pricing">Pricing</Link>
-                        
                       </li>
                       <li>
                         <Link to="/courses">Courses</Link>
-                        
                       </li>
                       <li>
                         <Link to="/blog">blog</Link>
-                       
                       </li>
                       <li>
                         <Link to="/contact-us">contact</Link>
@@ -105,12 +115,10 @@ const Header = () => {
           </div>
         </div>
 
-
-
         <nav className="navbar navbar-expand-lg mob-menu">
           <div className="container">
             <Link to="/" className="navbar-brand" href="#">
-              <h3  className="logo-t2">BDaffiliate-IT</h3>
+              <h3 className="logo-t2">BDaffiliate-IT</h3>
             </Link>
             <button
               className="navbar-toggler navbar-toggler2"
@@ -131,7 +139,12 @@ const Header = () => {
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0   hlu-bg">
                 <li className="nav-item">
-                  <Link to="/" className="nav-link active bold" aria-current="page" href="#">
+                  <Link
+                    to="/"
+                    className="nav-link active bold"
+                    aria-current="page"
+                    href="#"
+                  >
                     Home
                   </Link>
                 </li>
@@ -165,17 +178,10 @@ const Header = () => {
                     Contact
                   </Link>
                 </li>
-              
-             </ul>
-             
+              </ul>
             </div>
           </div>
         </nav>
-
-
-
-
-
       </header>
     </>
   );

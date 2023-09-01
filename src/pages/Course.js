@@ -12,7 +12,7 @@ import CourseCard from "../components/CourseCard";
 
 const Course = () => {
   const courseState = useSelector((state) => state?.course?.courses);
-  console.log(courseState);
+
   const dispatch = useDispatch();
 
   useEffect(() => {

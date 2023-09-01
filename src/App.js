@@ -30,6 +30,7 @@ import EmailVerify from "./pages/EmailVerify";
 import PaymentFailed from "./pages/PaymentFailed";
 import { PrivetRoute } from "./routing/PrivetRoute";
 import { OpenRoute } from "./routing/OpenRoute";
+import Gallery from "./pages/Gallery";
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/gallery" element={<Gallery/>} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog/:id" element={<SingleBlog />} />
@@ -49,7 +51,7 @@ function App() {
           <Route path="/register" element={<OpenRoute><SignUp /></OpenRoute>} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/cart" element={<PrivetRoute><Cart /></PrivetRoute>} />
-          <Route path="/checkout" element={<CheckOut />} />
+          <Route path="/checkout" element={<PrivetRoute><CheckOut /></PrivetRoute>} />
           <Route path="/courses" element={<Course /> } />
           <Route path="/course/:id" element={<SingleCourse />} />
           <Route path="/payment/success/:tranId" element={<PaymentSuccess />} />

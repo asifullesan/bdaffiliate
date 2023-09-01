@@ -30,8 +30,8 @@ import moment from "moment";
 const Home = () => {
   const blogState = useSelector((state) => state?.blog?.blogs);
   const navigate = useNavigate();
-  const authState = useSelector((state) => state?.auth)
-  console.log(authState);
+ 
+
 
   const dispatch = useDispatch();
   let location = useLocation();
@@ -42,6 +42,9 @@ const Home = () => {
   const getBlogs = () => {
     dispatch(getAllBlogs());
   };
+
+
+
 
   return (
     <>
@@ -128,12 +131,6 @@ const Home = () => {
                         <Link to="contact-us">contact</Link>
                       </li>
                     </ul>
-
-                    {
-                       authState?.user ===null ?  <></> : <div>
-                      <button className="logout-btn">LOG OUT</button>
-                    </div> 
-                    }
                     
                   </nav>
                 </div>
